@@ -2,16 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="404e69d0-88b1-4f1b-8067-bec1e8154e21" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_220548_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_221214_create_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222039_create_product_images_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222445_create_product_tag_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222702_create_comments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_223859_create_attribute_category_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_224450_create_product_attributes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_224628_create_product_variations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225344_create_provinces_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225443_create_cities_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225601_create_user_addresses_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_230209_create_coupons_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_230759_create_orders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_231450_create_order_items_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232304_create_wishlist_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232426_create_banners_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232647_create_contact_us_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232749_create_settings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/images/bg-register.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/js/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/images/admin/bg-register.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/images/admin/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/lang/en/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_charts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_error.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_login.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_navs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/admin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/navs/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/navs/_topbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_border.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_rotate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/views/admin/layouts/admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/views/admin/sections/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/views/admin/sections/topbar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supervisord.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supervisord.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis_data/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/redis_data/dump.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/src/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -148,17 +206,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sabt/PhpstormProjects/ecommerce&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/sabt/PhpstormProjects/ecommerce/src/database/migrations",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/database/migrations" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/public" />
+      <recent name="$PROJECT_DIR$/src/resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/public" />
     </key>
@@ -173,10 +237,24 @@
       <updated>1660913708918</updated>
       <workItem from="1660913711486" duration="2785000" />
       <workItem from="1660972745357" duration="572000" />
+      <workItem from="1661012681995" duration="457000" />
+      <workItem from="1661057143524" duration="1019000" />
+      <workItem from="1663366735413" duration="3972000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
