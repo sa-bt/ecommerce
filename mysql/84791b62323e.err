@@ -1,0 +1,11 @@
+2022-09-17T08:23:52.332448Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2022-09-17T08:23:52.332474Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.29) starting as process 92
+2022-09-17T08:23:52.352425Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-09-17T08:23:52.566555Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-09-17T08:23:52.885294Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-17T08:23:52.885355Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-09-17T08:23:52.889049Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2022-09-17T08:23:52.913518Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+2022-09-17T08:23:52.913585Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.29'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+2022-09-17T08:23:55.977254Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.29).
+2022-09-17T08:23:58.099273Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.29)  MySQL Community Server - GPL.

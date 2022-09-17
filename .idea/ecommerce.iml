@@ -119,6 +119,12 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/psr/http-client" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/psr/http-factory" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/cocur/slugify" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/cviebrock/eloquent-sluggable" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/realrashid/sweet-alert" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/hekmatinasser/jalali" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/hekmatinasser/verta" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/hekmatinasser/notowo" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

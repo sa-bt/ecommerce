@@ -2,67 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="404e69d0-88b1-4f1b-8067-bec1e8154e21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_220548_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_221214_create_products_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222039_create_product_images_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222445_create_product_tag_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222702_create_comments_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_223859_create_attribute_category_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_224450_create_product_attributes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_224628_create_product_variations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225344_create_provinces_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225443_create_cities_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225601_create_user_addresses_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_230209_create_coupons_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_230759_create_orders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_231450_create_order_items_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232304_create_wishlist_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232426_create_banners_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232647_create_contact_us_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232749_create_settings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/images/bg-register.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/js/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/images/admin/bg-register.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/images/admin/user.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/lang/en/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_charts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_error.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_navs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/admin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/navs/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/navs/_topbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_border.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_rotate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/admin/layouts/admin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/admin/sections/sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/admin/sections/topbar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webpack.mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/views/admin/sections/errors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ca.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ca.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/client-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/client-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/public_key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/public_key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/server-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/server-cert.pem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redis_data/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/redis_data/dump.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_220548_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_220548_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_220804_create_brands_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_220804_create_brands_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_221214_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_221214_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222039_create_product_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222039_create_product_images_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222339_create_tags_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222339_create_tags_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222445_create_product_tag_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222445_create_product_tag_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222702_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222702_create_comments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222936_create_product_rates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_222936_create_product_rates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_223804_create_attributes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_223804_create_attributes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_223859_create_attribute_category_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_223859_create_attribute_category_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_224450_create_product_attributes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_224450_create_product_attributes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_224628_create_product_variations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_224628_create_product_variations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225344_create_provinces_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225344_create_provinces_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225443_create_cities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225443_create_cities_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225601_create_user_addresses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_225601_create_user_addresses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_230209_create_coupons_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_230209_create_coupons_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_230759_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_230759_create_orders_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_231450_create_order_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_231450_create_order_items_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_231708_create_transactions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_231708_create_transactions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232304_create_wishlist_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232304_create_wishlist_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232426_create_banners_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232426_create_banners_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232647_create_contact_us_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232647_create_contact_us_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232749_create_settings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_11_09_232749_create_settings_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/fonts/Vazir.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/fonts/Vazir.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/fonts/Vazir.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/fonts/Vazir.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/fonts/Vazir.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/images/bg-forgot-password.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/images/bg-forgot-password.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/images/bg-login.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/images/bg-login.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/images/bg-register.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/images/bg-register.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/fonts/Vazir.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/fonts/Vazir.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/fonts/Vazir.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/fonts/Vazir.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fonts/Vazir.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/images/admin/bg-forgot-password.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/images/admin/bg-forgot-password.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/images/admin/bg-login.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/images/admin/bg-login.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/images/admin/bg-register.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/images/admin/bg-register.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/images/admin/user.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/images/admin/user.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/admin/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/lang/en/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/lang/en/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/lang/en/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/lang/en/passwords.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_charts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_charts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_dropdowns.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_dropdowns.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_error.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_error.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_navs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_navs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/navs/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/navs/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/navs/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/navs/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/navs/_topbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/navs/_topbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_animation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_background.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_background.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_border.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_border.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_display.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_display.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_rotate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_rotate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/admin/utilities/_text.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/admin/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/admin/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/admin/sections/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/admin/sections/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/admin/sections/scroll_top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/admin/sections/scroll_top.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/admin/sections/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/admin/sections/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/admin/sections/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/admin/sections/topbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supervisord.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/supervisord.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +113,18 @@
     <setting file="file://$PROJECT_DIR$/.env" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dockerfile" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/.env" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Http/Controllers/Admin/BrandController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Http/Requests/Admin/BrandRequest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Models/Brand.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/composer.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/config/sluggable.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/resources/views/admin/brands/create.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/resources/views/admin/brands/index.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/resources/views/admin/sections/topbar.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/routes/web.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -198,6 +242,12 @@
       <path value="$PROJECT_DIR$/src/vendor/psr/http-client" />
       <path value="$PROJECT_DIR$/src/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/src/vendor/composer" />
+      <path value="$PROJECT_DIR$/src/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/src/vendor/cviebrock/eloquent-sluggable" />
+      <path value="$PROJECT_DIR$/src/vendor/realrashid/sweet-alert" />
+      <path value="$PROJECT_DIR$/src/vendor/hekmatinasser/jalali" />
+      <path value="$PROJECT_DIR$/src/vendor/hekmatinasser/verta" />
+      <path value="$PROJECT_DIR$/src/vendor/hekmatinasser/notowo" />
     </include_path>
   </component>
   <component name="ProjectId" id="2DZjscBCijdfrM6K6ME33JHD4Y8" />
@@ -211,19 +261,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/sabt/PhpstormProjects/ecommerce/src/database/migrations",
+    "last_opened_file_path": "/home/sabt/PhpstormProjects/ecommerce/src/resources/lang",
     "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources/lang" />
       <recent name="$PROJECT_DIR$/src/database/migrations" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/public" />
       <recent name="$PROJECT_DIR$/src/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources/lang" />
+      <recent name="$PROJECT_DIR$/src/resources/views/admin/sections" />
+      <recent name="$PROJECT_DIR$/src/resources/views/admin" />
       <recent name="$PROJECT_DIR$/src/public" />
     </key>
   </component>
@@ -239,7 +294,8 @@
       <workItem from="1660972745357" duration="572000" />
       <workItem from="1661012681995" duration="457000" />
       <workItem from="1661057143524" duration="1019000" />
-      <workItem from="1663366735413" duration="3972000" />
+      <workItem from="1663366735413" duration="4569000" />
+      <workItem from="1663402050954" duration="10495000" />
     </task>
     <servers />
   </component>
