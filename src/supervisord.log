@@ -270,3 +270,14 @@
 2022-09-17 09:55:09,831 INFO reaped unknown pid 251 (exit status 0)
 2022-09-17 10:03:26,613 INFO reaped unknown pid 288 (exit status 0)
 2022-09-17 13:04:20,027 INFO reaped unknown pid 355 (exit status 0)
+2022-09-17 21:18:38,990 WARN received SIGQUIT indicating exit request
+2022-09-17 21:18:39,006 INFO waiting for php-fpm, queue-worker_00, queue-worker_01, queue-worker_02, queue-worker_03, queue-worker_04, queue-worker_05, queue-worker_06, queue-worker_07 to die
+2022-09-17 21:18:40,063 INFO stopped: queue-worker_00 (exit status 0)
+2022-09-17 21:18:40,065 INFO stopped: queue-worker_01 (exit status 0)
+2022-09-17 21:18:40,065 INFO stopped: queue-worker_02 (exit status 0)
+2022-09-17 21:18:40,066 INFO stopped: queue-worker_03 (exit status 0)
+2022-09-17 21:18:40,067 INFO stopped: queue-worker_04 (exit status 0)
+2022-09-17 21:18:40,068 INFO stopped: queue-worker_05 (exit status 0)
+2022-09-17 21:18:40,069 INFO stopped: queue-worker_06 (exit status 0)
+2022-09-17 21:18:40,069 INFO stopped: queue-worker_07 (exit status 0)
+2022-09-17 21:18:40,153 INFO stopped: php-fpm (exit status 0)

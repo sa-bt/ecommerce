@@ -1,0 +1,6 @@
+mysql
+mysql/*
+.DS_Store
+.idea
+redis_data/*
+.env
