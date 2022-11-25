@@ -44,12 +44,6 @@ class BrandController extends Controller
         return redirect()->route('admin.brands.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Brand  $brand
-     * @return \Illuminate\Http\Response
-     */
     public function show(Brand $brand)
     {
         return view('admin/brands/show',compact('brand'));
