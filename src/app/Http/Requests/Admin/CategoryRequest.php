@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Route;
 
 class CategoryRequest extends FormRequest
 {
@@ -23,13 +24,18 @@ class CategoryRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            "name"=>"required",
-            "slug"=>"required|unique:categories,slug",
-            "parent_id"=>"required",
-            "attribute_ids"=>"required",
-            "attribute_is_filter_ids"=>"required",
-            "variation_id"=>"required",
+
+        $rules = [
+            "name" => "required",
+            "slug" => "required|unique:categories,slug",
+            "parent_id" => "required",
+            "attribute_ids" => "required",
+            "attribute_is_filter_ids" => "required",
+            "variation_id" => "required",
         ];
+        if (str_contains(Route::currentRouteName(), 'update')) {
+            $rules['slug'] .= ',' . $this->route('category.id');
+        }
+        return $rules;
     }
 }

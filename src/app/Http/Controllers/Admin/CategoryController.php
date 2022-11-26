@@ -63,27 +63,35 @@ class CategoryController extends Controller
         return view('admin/categories/show', compact('category'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param \App\Models\Category $category
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit(Category $category)
     {
-        //
+        $parentCategories = $this->repository->findBy(['parent_id' => 0]);
+        $attributes = $this->attributeRepository->all();
+        return view('admin/categories/edit', compact('parentCategories', 'attributes','category'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @param \App\Models\Category $category
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Category $category)
+
+    public function update(CategoryRequest $request, Category $category)
     {
-        //
+        try {
+            DB::beginTransaction();
+            $category->attributes()->detach();
+            foreach ($request->attribute_ids as $attributeId) {
+                $attribute = $this->attributeRepository->findOneOrFail($attributeId);
+                $attribute->categories()->attach($category->id, [
+                    "is_filter" => in_array($attributeId, $request->attribute_is_filter_ids) ? 1 : 0,
+                    "is_variation" => $request->variation_id == $attributeId ? 1 : 0]);
+            }
+            DB::commit();
+            $this->success(trans('common.updated_category'));
+            return redirect()->route('admin.categories.index');
+        } catch (\Exception $exception) {
+            DB::rollBack();
+            $this->alert(trans('common.alert'));
+            return redirect()->back();
+        }
+
     }
 
     /**
