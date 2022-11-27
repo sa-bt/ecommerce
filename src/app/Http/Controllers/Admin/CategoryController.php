@@ -76,6 +76,7 @@ class CategoryController extends Controller
     {
         try {
             DB::beginTransaction();
+            $this->repository->update($request->validated(),$category->id);
             $category->attributes()->detach();
             foreach ($request->attribute_ids as $attributeId) {
                 $attribute = $this->attributeRepository->findOneOrFail($attributeId);
