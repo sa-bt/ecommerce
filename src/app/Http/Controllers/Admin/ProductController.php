@@ -3,39 +3,42 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\ProductRequest;
 use App\Http\Requests\Admin\TagRequest;
 use App\Models\Tag;
-use App\Repositories\Admin\TagRepository;
+use App\Repositories\Admin\CategoryRepository;
+use App\Repositories\Admin\ProductRepository;
 use Illuminate\Support\Facades\DB;
 
-class TagController extends Controller
+class ProductController extends Controller
 {
-    private TagRepository $repository;
+    private ProductRepository $repository;
+    private CategoryRepository $categoryRepository;
 
-    public function __construct(TagRepository $repository)
+    public function __construct(ProductRepository $repository)
     {
         $this->repository = $repository;
     }
 
     public function index()
     {
-        $tags = $this->repository->allByPagination();
-        return view('admin.tags.index', compact('tags'));
+        $products = $this->repository->allByPagination();
+        return view('admin.products.index', compact('products'));
     }
 
     public function create()
     {
-        return view('admin/tags/create');
+        return view('admin/products/create');
     }
 
-    public function store(TagRequest $request)
+    public function store(ProductRequest $request)
     {
         try {
             DB::beginTransaction();
             $this->repository->create($request->validated());
             DB::commit();
-            $this->success(trans('common.created_record',['value'=>'تگ']));
-            return redirect()->route('admin.tags.index');
+            $this->success(trans('common.created_tag'));
+            return redirect()->route('admin.products.index');
         } catch (\Exception $exception) {
             DB::rollBack();
             $this->alert(trans('common.alert'));
@@ -46,24 +49,24 @@ class TagController extends Controller
 
     public function show(Tag $tag)
     {
-        return view('admin/tags/show', compact('tag'));
+        return view('admin/products/show', compact('tag'));
     }
 
 
     public function edit(Tag $tag)
     {
-        return view('admin/tags/edit',compact('tag'));
+        return view('admin/products/edit',compact('tag'));
     }
 
 
-    public function update(TagRequest $request, $tag)
+    public function update(ProductRequest $request, $tag)
     {
         try {
             DB::beginTransaction();
             $this->repository->update($request->validated(),$tag);
             DB::commit();
-            $this->success(trans('common.updated_record',['value'=>'تگ']));
-            return redirect()->route('admin.tags.index');
+            $this->success(trans('common.updated_tag'));
+            return redirect()->route('admin.products.index');
         } catch (\Exception $exception) {
             DB::rollBack();
             $this->alert(trans('common.alert'));
