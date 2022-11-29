@@ -68,7 +68,7 @@ class CategoryController extends Controller
     {
         $parentCategories = $this->repository->findBy(['parent_id' => 0]);
         $attributes = $this->attributeRepository->all();
-        return view('admin/categories/edit', compact('parentCategories', 'attributes','category'));
+        return view('admin/categories/edit', compact('parentCategories', 'attributes', 'category'));
     }
 
 
@@ -76,7 +76,7 @@ class CategoryController extends Controller
     {
         try {
             DB::beginTransaction();
-            $this->repository->update($request->validated(),$category->id);
+            $this->repository->update($request->validated(), $category->id);
             $category->attributes()->detach();
             foreach ($request->attribute_ids as $attributeId) {
                 $attribute = $this->attributeRepository->findOneOrFail($attributeId);
@@ -104,5 +104,12 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         //
+    }
+
+    public function getCategoryAttributes(Category $category)
+    {
+        $attributes = $category->attributes()->wherePivot('is_variation', '=', 0)->get();
+        $variation = $category->attributes()->wherePivot('is_variation', '=', 1)->get();
+        return ["attributes" => $attributes, "variation" => $variation];
     }
 }
