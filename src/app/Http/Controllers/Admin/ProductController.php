@@ -29,20 +29,22 @@ class ProductController extends Controller
     public function index()
     {
         $products = $this->repository->allByPagination();
-        return view('admin.products.index', compact('products', ));
+        return view('admin.products.index', compact('products',));
     }
 
     public function create()
     {
 
         $brands = $this->brandRepository->all();
-        $categories = $this->categoryRepository->findBy([["parent_id",">", "0"]]);
+        $categories = $this->categoryRepository->findBy([["parent_id", ">", "0"]]);
         $tags = $this->tagRepository->all();
         return view('admin.products.create', compact('tags', 'brands', 'categories'));
     }
 
     public function store(ProductRequest $request)
     {
+        //Upload files
+        $images=uploadProductImages($request->primary_image, $request->images);
         try {
             DB::beginTransaction();
             $this->repository->create($request->validated());
