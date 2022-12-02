@@ -7,6 +7,8 @@ use App\Http\Requests\Admin\ProductRequest;
 use App\Models\Tag;
 use App\Repositories\Admin\BrandRepository;
 use App\Repositories\Admin\CategoryRepository;
+use App\Repositories\Admin\ProductAttributeRepository;
+use App\Repositories\Admin\ProductImageRepository;
 use App\Repositories\Admin\ProductRepository;
 use App\Repositories\Admin\TagRepository;
 use Illuminate\Support\Facades\DB;
@@ -17,13 +19,17 @@ class ProductController extends Controller
     private CategoryRepository $categoryRepository;
     private BrandRepository $brandRepository;
     private TagRepository $tagRepository;
+    private ProductImageRepository $productImageRepository;
+    private ProductAttributeRepository $productAttributeRepository;
 
-    public function __construct(ProductRepository $repository, BrandRepository $brandRepository, CategoryRepository $categoryRepository, TagRepository $tagRepository)
+    public function __construct(ProductRepository $repository, BrandRepository $brandRepository, CategoryRepository $categoryRepository, TagRepository $tagRepository, ProductImageRepository $productImageRepository, ProductAttributeRepository $productAttributeRepository)
     {
         $this->repository = $repository;
         $this->brandRepository = $brandRepository;
         $this->categoryRepository = $categoryRepository;
         $this->tagRepository = $tagRepository;
+        $this->productImageRepository = $productImageRepository;
+        $this->productAttributeRepository = $productAttributeRepository;
     }
 
     public function index()
@@ -43,11 +49,37 @@ class ProductController extends Controller
 
     public function store(ProductRequest $request)
     {
+        $data = $request->validated();
         //Upload files
-        $images=uploadProductImages($request->primary_image, $request->images);
+//        dd($data);
+        [$primaryImage, $images] = uploadProductImages($request->primary_image, $request->images);
+        $data['primary_image'] = $primaryImage;
+        $data['primary_image'] = $primaryImage;
+
+
+        $product = $this->repository->create($data);
+
+        //Save images in product_images table
+        if (count($images) > 0) {
+            foreach ($images as $image) {
+                $this->productImageRepository->create([
+                    "product_id" => $product->id,
+                    "image" => $image
+                ]);
+            }
+        }
+        if (count($data['attribute_ids']) > 0) {
+            foreach ($data['attribute_ids'] as $key => $value) {
+                $this->productAttributeRepository->create([
+                    "product_id" => $product->id,
+                    "attribute_id" => $key,
+                    "value"=>$value,
+                ]);
+            }
+        }
+        dd(22);
         try {
             DB::beginTransaction();
-            $this->repository->create($request->validated());
             DB::commit();
             $this->success(trans('common.created_tag'));
             return redirect()->route('admin.products.index');

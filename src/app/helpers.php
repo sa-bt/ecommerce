@@ -21,5 +21,5 @@ function uploadProductImages($primaryImage, $images)
         $image->move(storage_path(env('PRODUCT_IMAGE_UPLOAD_PATH')), $fileNamePrimary);
         $fileNameImages[] = $fileNameImage;
     }
-    return ['fileNamePrimaryImage' => $fileNamePrimary, 'fileNameImages' => $fileNameImages];
+    return [ $fileNamePrimary,  $fileNameImages];
 }
