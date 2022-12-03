@@ -10,6 +10,7 @@ use App\Repositories\Admin\CategoryRepository;
 use App\Repositories\Admin\ProductAttributeRepository;
 use App\Repositories\Admin\ProductImageRepository;
 use App\Repositories\Admin\ProductRepository;
+use App\Repositories\Admin\ProductVariationRepository;
 use App\Repositories\Admin\TagRepository;
 use Illuminate\Support\Facades\DB;
 
@@ -21,8 +22,9 @@ class ProductController extends Controller
     private TagRepository $tagRepository;
     private ProductImageRepository $productImageRepository;
     private ProductAttributeRepository $productAttributeRepository;
+    private ProductVariationRepository $productVariationRepository;
 
-    public function __construct(ProductRepository $repository, BrandRepository $brandRepository, CategoryRepository $categoryRepository, TagRepository $tagRepository, ProductImageRepository $productImageRepository, ProductAttributeRepository $productAttributeRepository)
+    public function __construct(ProductRepository $repository, BrandRepository $brandRepository, CategoryRepository $categoryRepository, TagRepository $tagRepository, ProductImageRepository $productImageRepository, ProductAttributeRepository $productAttributeRepository, ProductVariationRepository $productVariationRepository)
     {
         $this->repository = $repository;
         $this->brandRepository = $brandRepository;
@@ -30,6 +32,7 @@ class ProductController extends Controller
         $this->tagRepository = $tagRepository;
         $this->productImageRepository = $productImageRepository;
         $this->productAttributeRepository = $productAttributeRepository;
+        $this->productVariationRepository = $productVariationRepository;
     }
 
     public function index()
@@ -50,38 +53,50 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
         $data = $request->validated();
+
         //Upload files
-//        dd($data);
         [$primaryImage, $images] = uploadProductImages($request->primary_image, $request->images);
         $data['primary_image'] = $primaryImage;
-        $data['primary_image'] = $primaryImage;
 
-
-        $product = $this->repository->create($data);
-
-        //Save images in product_images table
-        if (count($images) > 0) {
-            foreach ($images as $image) {
-                $this->productImageRepository->create([
-                    "product_id" => $product->id,
-                    "image" => $image
-                ]);
-            }
-        }
-        if (count($data['attribute_ids']) > 0) {
-            foreach ($data['attribute_ids'] as $key => $value) {
-                $this->productAttributeRepository->create([
-                    "product_id" => $product->id,
-                    "attribute_id" => $key,
-                    "value"=>$value,
-                ]);
-            }
-        }
-        dd(22);
         try {
             DB::beginTransaction();
+            $product = $this->repository->create($data);
+
+            //Save images in product_images table
+            if (count($images) > 0) {
+                foreach ($images as $image) {
+                    $this->productImageRepository->create([
+                        "product_id" => $product->id,
+                        "image" => $image
+                    ]);
+                }
+            }
+            if (count($data['attribute_ids']) > 0) {
+                foreach ($data['attribute_ids'] as $key => $value) {
+                    $this->productAttributeRepository->create([
+                        "product_id" => $product->id,
+                        "attribute_id" => $key,
+                        "value" => $value,
+                    ]);
+                }
+            }
+            $attributeId = $product->category->attributes()->wherePivot('is_variation', 1)->first()->id;
+            if ($countVariations = count($data['variation_values']) > 0) {
+                for ($i = 0; $i < $countVariations; $i++) {
+                    $this->productVariationRepository->create([
+                        "product_id" => $product->id,
+                        "attribute_id" => $attributeId,
+                        "value" => $data['variation_values']['value'][$i],
+                        "price" => $data['variation_values']['price'][$i],
+                        "quantity" => $data['variation_values']['quantity'][$i],
+                        "sku" => $data['variation_values']['sku'][$i],
+                    ]);
+                }
+            }
+
+            $product->tags()->attach($data['tag_ids']);
             DB::commit();
-            $this->success(trans('common.created_tag'));
+            $this->success(trans('common.created_record',['value'=>'محصول']));
             return redirect()->route('admin.products.index');
         } catch (\Exception $exception) {
             DB::rollBack();

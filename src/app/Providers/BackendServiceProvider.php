@@ -9,6 +9,7 @@ use App\Interfaces\CategoryInterface;
 use App\Interfaces\ProductAttributeInterface;
 use App\Interfaces\ProductImageInterface;
 use App\Interfaces\ProductInterface;
+use App\Interfaces\ProductVariationInterface;
 use App\Interfaces\TagInterface;
 use App\Models\Category;
 use App\Repositories\Admin\AttributeRepository;
@@ -17,6 +18,7 @@ use App\Repositories\Admin\CategoryRepository;
 use App\Repositories\Admin\ProductAttributeRepository;
 use App\Repositories\Admin\ProductImageRepository;
 use App\Repositories\Admin\ProductRepository;
+use App\Repositories\Admin\ProductVariationRepository;
 use App\Repositories\Admin\TagRepository;
 use App\Repositories\BaseRepository;
 use Illuminate\Support\ServiceProvider;
@@ -34,5 +36,6 @@ class BackendServiceProvider extends ServiceProvider
         $this->app->bind(BrandInterface::class, BrandRepository::class);
         $this->app->bind(ProductImageInterface::class,ProductImageRepository::class);
         $this->app->bind(ProductAttributeInterface::class,ProductAttributeRepository::class);
+        $this->app->bind(ProductVariationInterface::class,ProductVariationRepository::class);
     }
 }
