@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\ProductRequest;
-use App\Models\Product;
 use App\Models\Tag;
 use App\Repositories\Admin\BrandRepository;
 use App\Repositories\Admin\CategoryRepository;
@@ -15,7 +14,7 @@ use App\Repositories\Admin\ProductVariationRepository;
 use App\Repositories\Admin\TagRepository;
 use Illuminate\Support\Facades\DB;
 
-class ProductController extends Controller
+class ProductImageController extends Controller
 {
     private ProductRepository $repository;
     private CategoryRepository $categoryRepository;
@@ -107,26 +106,23 @@ class ProductController extends Controller
 
     }
 
-    public function show(Product $product)
+    public function show(Tag $tag)
     {
-        $productAttributes=$product->attributes()->with('attribute');
-        $productVariations=$product->variations();
-        $images=$product->images();
-        return view('admin/products/show', compact('product','productAttributes','productVariations','images'));
+        return view('admin/products/show', compact('tag'));
     }
 
 
-    public function edit(Product $product)
+    public function edit(Tag $tag)
     {
         return view('admin/products/edit', compact('tag'));
     }
 
 
-    public function update(ProductRequest $request, $product)
+    public function update(ProductRequest $request, $tag)
     {
         try {
             DB::beginTransaction();
-            $this->repository->update($request->validated(), $product);
+            $this->repository->update($request->validated(), $tag);
             DB::commit();
             $this->success(trans('common.updated_tag'));
             return redirect()->route('admin.products.index');
@@ -141,10 +137,10 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Models\Product $tag
+     * @param \App\Models\Tag $tag
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $tag)
+    public function destroy(Tag $tag)
     {
         //
     }

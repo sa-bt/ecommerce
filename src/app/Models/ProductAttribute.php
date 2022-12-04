@@ -16,9 +16,18 @@ class ProductAttribute extends Model
     ];
 
 
-
     public function getIsActiveAttribute($isActive)
     {
         return $isActive ? 'فعال' : 'غیرفعال';
+    }
+
+    public function attribute()
+    {
+        return $this->belongsTo(Attribute::class);
+    }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
     }
 }
