@@ -110,15 +110,20 @@ class ProductController extends Controller
     public function show(Product $product)
     {
         $productAttributes=$product->attributes()->with('attribute');
-        $productVariations=$product->variations();
-        $images=$product->images();
+        $productVariations=$product->variations;
+        $images=$product->images;
         return view('admin/products/show', compact('product','productAttributes','productVariations','images'));
     }
 
 
     public function edit(Product $product)
     {
-        return view('admin/products/edit', compact('tag'));
+        $brands=$this->brandRepository->all();
+        $tags=$this->tagRepository->all();
+
+        $productAttributes=$product->attributes()->with('attribute');
+        $productVariations=$product->variations;
+        return view('admin/products/edit', compact('product','productAttributes','productVariations','brands','tags'));
     }
 
 
