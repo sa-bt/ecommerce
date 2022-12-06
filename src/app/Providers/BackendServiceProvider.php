@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Interfaces\AttributeInterface;
+use App\Interfaces\BannerInterface;
 use App\Interfaces\BaseInterface;
 use App\Interfaces\BrandInterface;
 use App\Interfaces\CategoryInterface;
@@ -13,6 +14,7 @@ use App\Interfaces\ProductVariationInterface;
 use App\Interfaces\TagInterface;
 use App\Models\Category;
 use App\Repositories\Admin\AttributeRepository;
+use App\Repositories\Admin\BannerRepository;
 use App\Repositories\Admin\BrandRepository;
 use App\Repositories\Admin\CategoryRepository;
 use App\Repositories\Admin\ProductAttributeRepository;
@@ -34,6 +36,7 @@ class BackendServiceProvider extends ServiceProvider
         $this->app->bind(TagInterface::class, TagRepository::class);
         $this->app->bind(ProductInterface::class, ProductRepository::class);
         $this->app->bind(BrandInterface::class, BrandRepository::class);
+        $this->app->bind(BannerInterface::class, BannerRepository::class);
         $this->app->bind(ProductImageInterface::class,ProductImageRepository::class);
         $this->app->bind(ProductAttributeInterface::class,ProductAttributeRepository::class);
         $this->app->bind(ProductVariationInterface::class,ProductVariationRepository::class);
