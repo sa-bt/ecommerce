@@ -21,5 +21,14 @@ function uploadProductImages($primaryImage, $images)
         $image->move(storage_path(env('PRODUCT_IMAGE_UPLOAD_PATH')), $fileNamePrimary);
         $fileNameImages[] = $fileNameImage;
     }
-    return [ $fileNamePrimary,  $fileNameImages];
+    return [$fileNamePrimary, $fileNameImages];
+}
+
+function uploadBannerImage($image)
+{
+
+    $fileNameImage = generateFileName($image->getClientOriginalName());
+    $image->move(storage_path(env('BANNER_IMAGE_UPLOAD_PATH')), $fileNameImage);
+
+    return $fileNameImage;
 }

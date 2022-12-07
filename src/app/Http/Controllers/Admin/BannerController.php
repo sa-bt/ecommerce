@@ -18,37 +18,28 @@ class BannerController extends Controller
         $this->repository = $repository;
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $banners=$this->repository->allByPagination();
         return view('admin/banners/index', compact('banners'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         return view('admin/banners/create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(BannerRequest $request)
     {
-        Banner::create($request->validated());
-        Alert::toast('Created Successfully', 'success')->position('bottom-left')->timerProgressBar();
+        $data = $request->validated();
+
+        //Upload files
+        $data['image'] = uploadBannerImage($request->image);
+
+        $this->repository->create($data);
+        $this->success(trans('common.created_record',['value'=>'بنر']));
         return redirect()->route('admin.banners.index');
     }
 

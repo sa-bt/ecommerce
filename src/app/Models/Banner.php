@@ -12,9 +12,15 @@ class Banner extends Model
     use Sluggable;
 
     protected $fillable = [
-        'name',
-        'is_active',
-        'slug',
+        "image",
+        "priority",
+        "type",
+        "title",
+        "text",
+        "is_active",
+        "button_text",
+        "button_link",
+        "button_icon",
     ];
 
     public function sluggable(): array
