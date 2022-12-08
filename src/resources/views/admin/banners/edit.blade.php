@@ -32,7 +32,7 @@
                 <div class="row justify-content-center mb-3">
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="{{ url( env('BANNER_IMAGES_UPLOAD_PATH').$banner->image ) }}" alt="">
+                            <img class="card-img-top" src="{{ url( env('BANNER_IMAGES_STORAGE_PATH').$banner->image ) }}" alt="">
                         </div>
                     </div>
                 </div>

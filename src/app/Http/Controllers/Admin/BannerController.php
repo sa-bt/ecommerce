@@ -68,8 +68,16 @@ class BannerController extends Controller
      */
     public function update(BannerRequest $request, Banner $banner)
     {
-        $banner->update($request->validated());
-        Alert::toast('Updated Successfully', 'success')->position('bottom-left')->timerProgressBar();
+
+        $data = $request->validated();
+
+        //Upload files
+        if ($request->has('image')){
+            $data['image'] = uploadBannerImage($request->image);
+        }
+
+        $this->repository->update($data,$banner->id);
+        $this->success(trans('common.updated_record',['value'=>'بنر']));
         return redirect()->route('admin.banners.index');
     }
 

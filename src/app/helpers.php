@@ -12,13 +12,13 @@ function uploadProductImages($primaryImage, $images)
 
     //upload primary image
     $fileNamePrimary = generateFileName($primaryImage->getClientOriginalName());
-    $primaryImage->move(storage_path(env('PRODUCT_IMAGE_UPLOAD_PATH')), $fileNamePrimary);
+    $primaryImage->move(storage_path(env('PRODUCT_IMAGES_UPLOAD_PATH')), $fileNamePrimary);
 
     //upload another images
     $fileNameImages = [];
     foreach ($images as $image) {
         $fileNameImage = generateFileName($image->getClientOriginalName());
-        $image->move(storage_path(env('PRODUCT_IMAGE_UPLOAD_PATH')), $fileNamePrimary);
+        $image->move(storage_path(env('PRODUCT_IMAGES_UPLOAD_PATH')), $fileNamePrimary);
         $fileNameImages[] = $fileNameImage;
     }
     return [$fileNamePrimary, $fileNameImages];
@@ -26,9 +26,9 @@ function uploadProductImages($primaryImage, $images)
 
 function uploadBannerImage($image)
 {
-
     $fileNameImage = generateFileName($image->getClientOriginalName());
-    $image->move(storage_path(env('BANNER_IMAGE_UPLOAD_PATH')), $fileNameImage);
+    $image->move(storage_path('app/public/'.env('BANNER_IMAGES_UPLOAD_PATH')), $fileNameImage);
 
     return $fileNameImage;
 }
+

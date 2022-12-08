@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Route;
 
 class BannerRequest extends FormRequest
 {
@@ -23,16 +24,20 @@ class BannerRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            "image"=>"required|mimes:jpg,jpeg,png,svg",
-            "priority"=>"required|integer",
-            "type"=>"required",
-            "title"=>"nullable",
-            "text"=>"nullable",
-            "is_active"=>"required",
-            "button_text"=>"nullable",
-            "button_link"=>"nullable",
-            "button_icon"=>"nullable",
+        $rules = [
+            "image" => "required|mimes:jpg,jpeg,png,svg",
+            "priority" => "required|integer",
+            "type" => "required",
+            "title" => "nullable",
+            "text" => "nullable",
+            "is_active" => "required",
+            "button_text" => "nullable",
+            "button_link" => "nullable",
+            "button_icon" => "nullable",
         ];
+        if (str_contains(Route::currentRouteName(), 'update')) {
+            $rules['image'] = "nullable|mimes:jpg,jpeg,png,svg";
+        }
+        return $rules;
     }
 }
