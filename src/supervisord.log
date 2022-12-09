@@ -767,3 +767,14 @@
 2022-12-08 14:40:55,682 INFO success: queue-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2022-12-08 14:40:55,682 INFO success: queue-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2022-12-08 14:40:55,683 INFO success: queue-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-09 00:27:31,572 WARN received SIGQUIT indicating exit request
+2022-12-09 00:27:31,602 INFO waiting for php-fpm, queue-worker_00, queue-worker_01, queue-worker_02, queue-worker_03, queue-worker_04, queue-worker_05, queue-worker_06, queue-worker_07 to die
+2022-12-09 00:27:32,778 INFO stopped: queue-worker_00 (exit status 0)
+2022-12-09 00:27:32,780 INFO stopped: queue-worker_01 (exit status 0)
+2022-12-09 00:27:32,780 INFO stopped: queue-worker_02 (exit status 0)
+2022-12-09 00:27:32,780 INFO stopped: queue-worker_03 (exit status 0)
+2022-12-09 00:27:32,780 INFO stopped: queue-worker_04 (exit status 0)
+2022-12-09 00:27:32,781 INFO stopped: queue-worker_05 (exit status 0)
+2022-12-09 00:27:32,781 INFO stopped: queue-worker_06 (exit status 0)
+2022-12-09 00:27:32,782 INFO stopped: queue-worker_07 (exit status 0)
+2022-12-09 00:27:32,821 INFO stopped: php-fpm (exit status 0)

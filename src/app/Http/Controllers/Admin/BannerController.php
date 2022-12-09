@@ -20,7 +20,7 @@ class BannerController extends Controller
 
     public function index()
     {
-        $banners=$this->repository->allByPagination();
+        $banners = $this->repository->allByPagination();
         return view('admin/banners/index', compact('banners'));
     }
 
@@ -39,7 +39,7 @@ class BannerController extends Controller
         $data['image'] = uploadBannerImage($request->image);
 
         $this->repository->create($data);
-        $this->success(trans('common.created_record',['value'=>'بنر']));
+        $this->success(trans('common.created_record', ['value' => 'بنر']));
         return redirect()->route('admin.banners.index');
     }
 
@@ -72,12 +72,13 @@ class BannerController extends Controller
         $data = $request->validated();
 
         //Upload files
-        if ($request->has('image')){
+        if ($request->has('image')) {
+            $this->repository->deleteFile($banner);
             $data['image'] = uploadBannerImage($request->image);
         }
 
-        $this->repository->update($data,$banner->id);
-        $this->success(trans('common.updated_record',['value'=>'بنر']));
+        $this->repository->update($data, $banner->id);
+        $this->success(trans('common.updated_record', ['value' => 'بنر']));
         return redirect()->route('admin.banners.index');
     }
 
@@ -89,6 +90,9 @@ class BannerController extends Controller
      */
     public function destroy(Banner $banner)
     {
-        //
+        $this->repository->completelyDelete($banner);
+
+        $this->success(trans('common.deleted_record', ['value' => 'بنر']));
+        return redirect()->route('admin.banners.index');
     }
 }
