@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProductImageController;
 use App\Http\Controllers\Admin\TagController ;
+use App\Http\Controllers\HomeController ;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,3 +40,5 @@ Route::prefix('/admin-panel/management')->name('admin.')->group( function () {
     //get category attributes
     Route::get('/category-attributes/{category}',[CategoryController::class,'getCategoryAttributes']);
 });
+
+Route::get('/', [HomeController::class,'index'])->name('home');

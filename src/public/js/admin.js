@@ -59563,15 +59563,27 @@ MIT License, https://github.com/cozeit/czMore/blob/master/LICENSE.md
 
 /***/ }),
 
+/***/ "./resources/scss/home/home.scss":
+/*!***************************************!*\
+  !*** ./resources/scss/home/home.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*****************************************************************************!*\
-  !*** multi ./resources/js/admin/admin.js ./resources/scss/admin/admin.scss ***!
-  \*****************************************************************************/
+/*!*************************************************************************************************************!*\
+  !*** multi ./resources/js/admin/admin.js ./resources/scss/admin/admin.scss ./resources/scss/home/home.scss ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /var/www/html/resources/js/admin/admin.js */"./resources/js/admin/admin.js");
-module.exports = __webpack_require__(/*! /var/www/html/resources/scss/admin/admin.scss */"./resources/scss/admin/admin.scss");
+__webpack_require__(/*! /var/www/html/resources/scss/admin/admin.scss */"./resources/scss/admin/admin.scss");
+module.exports = __webpack_require__(/*! /var/www/html/resources/scss/home/home.scss */"./resources/scss/home/home.scss");
 
 
 /***/ })
