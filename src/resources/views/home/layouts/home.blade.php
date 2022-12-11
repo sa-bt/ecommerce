@@ -41,7 +41,6 @@
     <script src="{{ asset('/js/home/plugins.js') }}"></script>
     <script src="{{ asset('/js/home.js') }}"></script>
 
-    @include('sweet::alert')
 
     @yield('script')
 
