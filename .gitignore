@@ -1,6 +1,10 @@
-mysql
-mysql/*
+docker/mysql
+docker/mysql/*
 .DS_Store
 .idea
-redis_data/*
+docker/redis_data/*
 .env
+node_modules
+vendor/*
+vendor
+
