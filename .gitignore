@@ -5,6 +5,7 @@ docker/mysql/*
 docker/redis_data/*
 .env
 node_modules
+node_modules/*
 vendor/*
 vendor
 
