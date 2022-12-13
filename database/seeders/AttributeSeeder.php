@@ -24,6 +24,14 @@ class AttributeSeeder extends Seeder
                 "name" => "جنس",
             ], [
                 "name" => "شکل",
+            ], [
+                "name" => "مدل",
+            ], [
+                "name" => "مارک",
+            ], [
+                "name" => "شرکت تولید کننده",
+            ], [
+                "name" => "بو",
             ],
         ];
         foreach ($records as $record) {
