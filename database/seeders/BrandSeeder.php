@@ -4,9 +4,10 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Attribute;
+use App\Models\Brand;
 use Illuminate\Database\Seeder;
 
-class AttributeSeeder extends Seeder
+class BrandSeeder extends Seeder
 {
     /**
      * Seed the application's database.
@@ -17,25 +18,27 @@ class AttributeSeeder extends Seeder
     {
         $records = [
             [
-                "name" => "رنگ",
+                "name" => "Gucci",
             ], [
-                "name" => "اندازه",
+                "name" => "Puma",
             ], [
-                "name" => "جنس",
+                "name" => "Adidas",
             ], [
-                "name" => "شکل",
+                "name" => "Hermès",
             ], [
-                "name" => "مدل",
+                "name" => "Louis Vuitton",
             ], [
-                "name" => "مارک",
+                "name" => "Chanel",
             ], [
-                "name" => "شرکت تولید کننده",
+                "name" => "Chanel",
             ], [
-                "name" => "بو",
+                "name" => "Burberry",
+            ],[
+                "name" => "Zara",
             ],
         ];
         foreach ($records as $record) {
-            Attribute::firstOrCreate(["name" =>$record['name']],$record);
+            Brand::firstOrCreate(["name"=>$record['name']],$record);
         }
     }
 }

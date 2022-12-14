@@ -17,16 +17,31 @@ class BannerSeeder extends Seeder
      */
     public function run()
     {
-        
+
         $records = [
             [
-        "image"=>storage_path('app/public/'.env('BANNER_IMAGES_UPLOAD_PATH'.'banner-4.png')),
-
-        "type"=>"slider",
+                "image" => 'banner-6.png',
+                "type" => "index-top",
+            ],
+            [
+                "image" => 'banner-7.png',
+                "type" => "index-top",
+            ],
+            [
+                "image" => 'banner-8.png',
+                "type" => "index-top",
+            ],
+            [
+                "image" => 'banner-4.png',
+                "type" => "index-bottom",
+            ],
+            [
+                "image" => 'banner-5.png',
+                "type" => "index-bottom",
             ],
         ];
         foreach ($records as $record) {
-            Banner::create($record);
+            Banner::firstOrCreate(["image"=>$record['image']],$record);
         }
     }
 }

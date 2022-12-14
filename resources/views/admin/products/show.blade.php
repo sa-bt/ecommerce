@@ -147,7 +147,7 @@
                 <div class="col-md-3">
                     <div class="card">
                         <img class="card-img-top"
-                         src="{{ url(env('PRODUCT_IMAGES_UPLOAD_PATH') . $product->primary_image) }}"
+                         src="{{ url(env('PRODUCT_IMAGES_STORAGE_PATH') . $product->primary_image) }}"
                             alt="{{ $product->name }}">
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                 <div class="col-md-3">
                     <div class="card">
                         <img class="card-img-top"
-                         src="{{ url(env('PRODUCT_IMAGES_UPLOAD_PATH') . $image->image) }}"
+                         src="{{ url(env('PRODUCT_IMAGES_STORAGE_PATH') . $image->image) }}"
                             alt="{{ $product->name }}">
                     </div>
                 </div>

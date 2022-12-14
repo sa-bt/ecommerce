@@ -43,7 +43,7 @@
                                     {{ $banners->firstItem() + $key }}
                                 </th>
                                 <th>
-                                    <a target="_blank" href="{{ url( env('BANNER_IMAGES_UPLOAD_PATH').$banner->image ) }}">
+                                    <a target="_blank" href="{{ url( env('BANNER_IMAGES_STORAGE_PATH').$banner->image ) }}">
                                         {{$banner->image}}
                                     </a>
                                 </th>
