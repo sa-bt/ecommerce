@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Banner;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -20,7 +21,9 @@ class HomeController extends Controller
 
         $indexBottomBanners=Banner::where('type','=','index-bottom')->where('is_active',1)->orderBy('priority')->get();
 
-        return view('home/index' , compact('sliders','indexTopBanners','indexBottomBanners'));
+        $products=Product::where('is_active',1)->get()->take(5);
+
+        return view('home/index' , compact('sliders','indexTopBanners','indexBottomBanners','products'));
     }
 
 }

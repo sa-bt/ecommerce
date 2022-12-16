@@ -18,6 +18,7 @@ class Product extends Model
         'primary_image',
         'description',
         'status',
+        'price',
         'is_active',
         'delivery_amount',
         'delivery_amount_per_product',

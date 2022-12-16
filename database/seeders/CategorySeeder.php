@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Category;
+use Attribute;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -54,8 +55,13 @@ class CategorySeeder extends Seeder
             ]
 
         ];
+        // $attributes=Attribute::all();
         foreach($records as $record){
             Category::firstOrCreate(["name"=>$record['name']],$record);
+        }
+        $categories=Category::where('parent_id',1)->get();
+        foreach ($categories as $category) {
+            $category->attributes()->sync([1,2,3,6,7]);
         }
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Carbon;
 
 function generateFileName($fileName)
 {
-    return Carbon::now()->format('Y_m_d_H_s') . '_' . $fileName;
+    return Carbon::now()->format('Y_m_d_H_i_s_u') . '_' . $fileName;
 }
 
 function uploadProductImages($primaryImage, $images)

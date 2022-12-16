@@ -49,3 +49,65 @@
 2022-12-14 14:54:13,276 INFO success: queue-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2022-12-14 14:54:13,276 INFO success: queue-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2022-12-14 14:54:13,276 INFO success: queue-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-14 16:09:10,770 WARN received SIGQUIT indicating exit request
+2022-12-14 16:09:10,773 INFO waiting for php-fpm, queue-worker_00, queue-worker_01, queue-worker_02, queue-worker_03, queue-worker_04, queue-worker_05, queue-worker_06, queue-worker_07 to die
+2022-12-14 16:09:10,790 INFO stopped: queue-worker_03 (exit status 0)
+2022-12-14 16:09:10,794 INFO stopped: queue-worker_00 (exit status 0)
+2022-12-14 16:09:11,796 INFO stopped: queue-worker_01 (exit status 0)
+2022-12-14 16:09:11,796 INFO stopped: queue-worker_02 (exit status 0)
+2022-12-14 16:09:11,797 INFO stopped: queue-worker_04 (exit status 0)
+2022-12-14 16:09:11,797 INFO stopped: queue-worker_05 (exit status 0)
+2022-12-14 16:09:11,797 INFO stopped: queue-worker_06 (exit status 0)
+2022-12-14 16:09:11,797 INFO stopped: queue-worker_07 (exit status 0)
+2022-12-14 16:09:11,815 INFO stopped: php-fpm (exit status 0)
+2022-12-15 10:22:57,622 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-12-15 10:22:57,628 INFO supervisord started with pid 1
+2022-12-15 10:22:58,631 INFO spawned: 'php-fpm' with pid 7
+2022-12-15 10:22:58,636 INFO spawned: 'queue-worker_00' with pid 8
+2022-12-15 10:22:58,642 INFO spawned: 'queue-worker_01' with pid 9
+2022-12-15 10:22:58,648 INFO spawned: 'queue-worker_02' with pid 10
+2022-12-15 10:22:58,656 INFO spawned: 'queue-worker_03' with pid 11
+2022-12-15 10:22:58,663 INFO spawned: 'queue-worker_04' with pid 12
+2022-12-15 10:22:58,673 INFO spawned: 'queue-worker_05' with pid 13
+2022-12-15 10:22:58,679 INFO spawned: 'queue-worker_06' with pid 14
+2022-12-15 10:22:58,687 INFO spawned: 'queue-worker_07' with pid 15
+2022-12-15 10:23:00,494 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-15 10:23:00,495 INFO success: queue-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-15 10:23:00,495 INFO success: queue-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-15 10:23:00,496 INFO success: queue-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-15 10:23:00,496 INFO success: queue-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-15 10:23:00,496 INFO success: queue-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-15 10:23:00,496 INFO success: queue-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-15 10:23:00,497 INFO success: queue-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-15 10:23:00,497 INFO success: queue-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-15 11:16:10,023 WARN received SIGQUIT indicating exit request
+2022-12-15 11:16:10,054 INFO waiting for php-fpm, queue-worker_00, queue-worker_01, queue-worker_02, queue-worker_03, queue-worker_04, queue-worker_05, queue-worker_06, queue-worker_07 to die
+2022-12-15 11:16:10,055 INFO stopped: queue-worker_05 (exit status 0)
+2022-12-15 11:16:10,055 INFO stopped: queue-worker_02 (exit status 0)
+2022-12-15 11:16:10,056 INFO stopped: queue-worker_03 (exit status 0)
+2022-12-15 11:16:10,056 INFO stopped: queue-worker_06 (exit status 0)
+2022-12-15 11:16:10,056 INFO stopped: queue-worker_07 (exit status 0)
+2022-12-15 11:16:11,058 INFO stopped: queue-worker_00 (exit status 0)
+2022-12-15 11:16:11,059 INFO stopped: queue-worker_01 (exit status 0)
+2022-12-15 11:16:11,059 INFO stopped: queue-worker_04 (exit status 0)
+2022-12-15 11:16:11,094 INFO stopped: php-fpm (exit status 0)
+2022-12-16 13:04:36,609 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-12-16 13:04:36,618 INFO supervisord started with pid 1
+2022-12-16 13:04:37,621 INFO spawned: 'php-fpm' with pid 7
+2022-12-16 13:04:37,624 INFO spawned: 'queue-worker_00' with pid 8
+2022-12-16 13:04:37,627 INFO spawned: 'queue-worker_01' with pid 9
+2022-12-16 13:04:37,629 INFO spawned: 'queue-worker_02' with pid 10
+2022-12-16 13:04:37,633 INFO spawned: 'queue-worker_03' with pid 11
+2022-12-16 13:04:37,636 INFO spawned: 'queue-worker_04' with pid 12
+2022-12-16 13:04:37,647 INFO spawned: 'queue-worker_05' with pid 13
+2022-12-16 13:04:37,650 INFO spawned: 'queue-worker_06' with pid 14
+2022-12-16 13:04:37,656 INFO spawned: 'queue-worker_07' with pid 15
+2022-12-16 13:04:38,891 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-16 13:04:38,891 INFO success: queue-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-16 13:04:38,892 INFO success: queue-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-16 13:04:38,892 INFO success: queue-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-16 13:04:38,892 INFO success: queue-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-16 13:04:38,899 INFO success: queue-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-16 13:04:38,899 INFO success: queue-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-16 13:04:38,899 INFO success: queue-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-12-16 13:04:38,899 INFO success: queue-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
